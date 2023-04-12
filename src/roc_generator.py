@@ -6,7 +6,6 @@ ANALYSIS OF 10 BINARY CLASSIFICATIO ALGORITHMS
 from sklearn.metrics import roc_curve, auc
 import matplotlib.pyplot as plt
 
-
 def ROC(name, y_test, y_pred_prob):
     fpr, tpr, thresholds = roc_curve(y_test, y_pred_prob)
     roc_auc = auc(fpr, tpr)
